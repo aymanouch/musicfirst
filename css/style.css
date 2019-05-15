@@ -7,6 +7,12 @@ html, body{
     height:100vh;
     font-family: 'Open Sans', sans-serif;
 }
+.ani{
+    animation: trans 3s ease-in-out;
+}
+.ani2{
+    animation: trans2 2s linear;
+}
 .left-col, .right-col{
     position: absolute;
     width:50%;
@@ -87,9 +93,9 @@ font-weight:bold;
 .left-col .data #artiste{
 font-size:12px;
 }
+
 .right-col{
     left:50%;
-
 }
 .upper{
     position: absolute;
@@ -249,3 +255,20 @@ font-size:12px;
 
     }
 }
+@keyframes trans {
+    0%{
+      transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+@keyframes trans2 {
+    0%{
+      transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+

@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <div class="contaner">
+    <div class="container">
             <div class="left-col">
                         <div class="logo">ALRNTV</div>
                     
@@ -86,6 +87,14 @@
     </div>
     
 
-    </div> 
+    </div>
+    <script>
+    $(function () {
+        $('.left-col').addClass('ani');
+        
+        $('.right-col').addClass('ani2');
+
+    });
+    </script> 
 </body>
 </html>
